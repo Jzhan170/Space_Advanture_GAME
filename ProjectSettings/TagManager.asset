@@ -6,6 +6,7 @@ TagManager:
   tags:
   - EnemyProjectile
   - FiringEnemy
+  - ChargeEnemy
   layers:
   - Default
   - TransparentFX
