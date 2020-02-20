@@ -7,6 +7,8 @@ public class Shooting : MonoBehaviour
     public Transform Muzzle;
     public GameObject Airbullet;
 
+     
+
     public float AirBulletForce = 20f;
 
     // Update is called once per frame
@@ -16,6 +18,8 @@ public class Shooting : MonoBehaviour
         {
             ShootAir();
         }
+
+        
     }
 
     void ShootAir()
@@ -23,5 +27,7 @@ public class Shooting : MonoBehaviour
         GameObject bullet1 = Instantiate(Airbullet, Muzzle.position, Muzzle.rotation);
         Rigidbody2D rb = bullet1.GetComponent<Rigidbody2D>();
         rb.AddForce(Muzzle.up * AirBulletForce, ForceMode2D.Impulse);
+
+        
     }
 }
