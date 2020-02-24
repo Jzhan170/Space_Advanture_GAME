@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1825729478782125889}
   m_Layer: 0
   m_Name: AirBullet
-  m_TagString: Untagged
+  m_TagString: Air Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
