@@ -9,6 +9,8 @@ TagManager:
   - ChargeEnemy
   - Pickups
   - Air Bullet
+  - Hole
+  - BulletPickup
   layers:
   - Default
   - TransparentFX
