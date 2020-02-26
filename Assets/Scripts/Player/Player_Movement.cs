@@ -12,7 +12,14 @@ public class Player_Movement : MonoBehaviour
 
     Vector2 movement;
     Vector2 mousePos;
-    
+
+    public VectorValues startingPosition;
+
+    void Start()
+    {
+        transform.position = startingPosition.initialValue;
+    }
+
     void Update()
     {
         movement.x = Input.GetAxisRaw("Horizontal");

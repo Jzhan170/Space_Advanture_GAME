@@ -7,6 +7,10 @@ TagManager:
   - EnemyProjectile
   - FiringEnemy
   - ChargeEnemy
+  - Pickups
+  - Air Bullet
+  - Hole
+  - BulletPickup
   layers:
   - Default
   - TransparentFX

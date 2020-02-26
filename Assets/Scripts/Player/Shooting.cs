@@ -28,6 +28,6 @@ public class Shooting : MonoBehaviour
         Rigidbody2D rb = bullet1.GetComponent<Rigidbody2D>();
         rb.AddForce(Muzzle.up * AirBulletForce, ForceMode2D.Impulse);
 
-        
+        Destroy(bullet1.gameObject, 0.1f);
     }
 }
