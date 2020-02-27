@@ -70,4 +70,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8ca4f1b87bad26449de32c19270a7fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneToLoad: 
+  SceneToLoad: test_transition1
+  playerPosition: {x: -3.64, y: -0.3}
+  playerStorage: {fileID: 11400000, guid: cd6fb39fc888d8a4abd3c431492e263e, type: 2}
