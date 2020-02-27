@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyStunned : MonoBehaviour
 {
-    public Sprite Stunned;
+    //public Sprite Stunned;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +21,7 @@ public class EnemyStunned : MonoBehaviour
     {
         if (other.gameObject.tag == "Air Bullet")
         {
-            this.gameObject.GetComponent<SpriteRenderer>().sprite = Stunned;
+            //this.gameObject.GetComponent<SpriteRenderer>().sprite = Stunned;
 
             Vector2 difference = transform.position - other.transform.position;
             transform.position = new Vector2(transform.position.x + difference.x, transform.position.y + difference.y);
