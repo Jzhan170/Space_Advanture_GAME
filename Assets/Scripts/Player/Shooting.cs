@@ -10,12 +10,19 @@ public class Shooting : MonoBehaviour
     private Vector2 startingPoint;
     private int leftTouch = 99;
 
+    public AudioClip airShot;
+    AudioSource audioS;
+
 
     public float AirBulletForce = 20f;
 
     // Update is called once per frame
     void Update()
     {
+        audioS = GetComponent<AudioSource>();
+
+        audioS.clip = airShot;
+
         //if (Input.GetButtonDown("Fire1"))
         //{
         //ShootAir();
@@ -46,7 +53,9 @@ public class Shooting : MonoBehaviour
             Rigidbody2D rb = bullet1.GetComponent<Rigidbody2D>();
             rb.AddForce(Muzzle.up * AirBulletForce, ForceMode2D.Impulse);
 
-            Destroy(bullet1.gameObject, 0.1f);
+            audioS.Play();
+
+            Destroy(bullet1.gameObject, 0.2f);
         }
 
         Vector2 getTouchPosition(Vector2 touchPosition)
