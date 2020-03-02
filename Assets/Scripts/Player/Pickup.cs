@@ -27,8 +27,9 @@ public class Pickup : MonoBehaviour
        if(other.gameObject.tag == "Player")
         {
             audioS.Play();
+            scorescript.scoreValue += 1;
             Destroy(gameObject, .1f);
-            
+            Debug.Log("Hit");
         }
     }
 }
