@@ -40,7 +40,10 @@ public class Player_Movement : MonoBehaviour
     void FixedUpdate()
     {
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
-        rb.transform.rotation = Quaternion.LookRotation(Vector3.forward, movement);
+        if (movement != Vector2.zero)
+        {
+            rb.transform.rotation = Quaternion.LookRotation(Vector3.forward, movement);
+        }
         //Vector2 lookDir = touchPos - rb.position;
         //float angle = Mathf.Atan2(lookDir.y,lookDir.x) * Mathf.Rad2Deg - 90f;
        // rb.rotation = angle;
