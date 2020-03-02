@@ -28,7 +28,7 @@ public class Pickup : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Debug.Log("Picked");
-            //audioS.Play();
+            audioS.Play();
             scorescript.scoreValue += 1;
             Destroy(gameObject, .1f);
             
