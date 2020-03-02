@@ -24,12 +24,14 @@ public class Pickup : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-       if(other.gameObject.tag == "Player")
+        Debug.Log("Touched"+other.gameObject.tag);
+        if (other.CompareTag("Player"))
         {
-            audioS.Play();
+            Debug.Log("Picked");
+            //audioS.Play();
             scorescript.scoreValue += 1;
             Destroy(gameObject, .1f);
-            Debug.Log("Hit");
+            
         }
     }
 }
