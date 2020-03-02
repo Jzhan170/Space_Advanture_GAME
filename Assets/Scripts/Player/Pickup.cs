@@ -29,7 +29,7 @@ public class Pickup : MonoBehaviour
             audioS.Play();
             scorescript.scoreValue += 1;
             Destroy(gameObject, .1f);
-            Debug.Log("Hit");
+            Debug.Log("Picked");
         }
     }
 }
