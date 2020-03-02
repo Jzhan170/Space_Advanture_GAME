@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 6069c380cb1f0104581e032bdcf53e18
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - player: {instanceID: 0}
+  - movement_joystick: {instanceID: 0}
+  - Airbullet: {fileID: 1369300245864950980, guid: 95893bb0c79f4fa4295c609c92d5e7a2,
+      type: 3}
+  - Muzzle: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
