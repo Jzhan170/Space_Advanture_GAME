@@ -5,10 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/White_Box_prototype.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/test_transition1.unity
     guid: 8f21305dc67199e418438247d761c0e8
+  - enabled: 1
+    path: Assets/Scenes/Level Design Prototypes.unity
+    guid: 732d88cd77288244497aa605cc7b931c
   m_configObjects: {}

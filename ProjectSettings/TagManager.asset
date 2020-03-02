@@ -11,6 +11,7 @@ TagManager:
   - Air Bullet
   - Hole
   - BulletPickup
+  - Spaceship
   layers:
   - Default
   - TransparentFX

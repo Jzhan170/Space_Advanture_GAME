@@ -1,13 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class Pickup : MonoBehaviour
 {
+    AudioSource audioS;
+    public AudioClip collected;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        audioS = GetComponent<AudioSource>();
+
+        audioS.clip = collected;
     }
 
     // Update is called once per frame
@@ -20,7 +26,10 @@ public class Pickup : MonoBehaviour
     {
        if(other.gameObject.tag == "Player")
         {
-            Destroy(gameObject);
+            audioS.Play();
+            scorescript.scoreValue += 1;
+            Destroy(gameObject, .1f);
+            Debug.Log("Hit");
         }
     }
 }
