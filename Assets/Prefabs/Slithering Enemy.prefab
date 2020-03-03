@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 990107958235960730}
   - component: {fileID: 132907423}
   - component: {fileID: 183957312596336071}
-  - component: {fileID: 3768383464119944823}
+  - component: {fileID: 713867214}
+  - component: {fileID: 3352540174634666883}
   m_Layer: 0
   m_Name: Slithering Enemy
   m_TagString: FiringEnemy
@@ -130,7 +131,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 4
   Chaseing_Stop_Distance: 3
---- !u!58 &3768383464119944823
+--- !u!114 &713867214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990107958235960732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 319d95cdfef899e489741ae32ef3ab86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!58 &3352540174634666883
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,6 +156,6 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.12026024, y: -0.0060129166}
+  m_Offset: {x: -0.020895004, y: -0.0835495}
   serializedVersion: 2
-  m_Radius: 0.75135326
+  m_Radius: 0.825407
