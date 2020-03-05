@@ -18,17 +18,17 @@ public class Player_Movement : MonoBehaviour
 
     public VectorValues startingPosition;
 
-    AudioSource audioS;
-    public AudioClip bump;
+    public AudioSource bumpsound, jetsound;
+    
 
 
     void Start()
     {
         transform.position = startingPosition.initialValue;
 
-        audioS = GetComponent<AudioSource>();
+        //audioS = GetComponent<AudioSource>();
 
-        audioS.clip = bump;
+        
     }
 
     void Update()
@@ -48,7 +48,8 @@ public class Player_Movement : MonoBehaviour
     {
         if (other.gameObject.CompareTag("obstacle") || other.gameObject.CompareTag("Border"))
         {
-            audioS.Play();
+         
+            bumpsound.Play();
         }
     }
 
@@ -60,6 +61,15 @@ public class Player_Movement : MonoBehaviour
         if (movement != Vector2.zero)
         {
             rb.transform.rotation = Quaternion.LookRotation(Vector3.forward, movement);
+
+            if (!jetsound.isPlaying)
+            {
+                jetsound.Play();
+            }
+        }
+        else
+        {
+            jetsound.Stop();
         }
         //Vector2 lookDir = touchPos - rb.position;
         //float angle = Mathf.Atan2(lookDir.y,lookDir.x) * Mathf.Rad2Deg - 90f;
