@@ -12,6 +12,9 @@ TagManager:
   - Hole
   - BulletPickup
   - Spaceship
+  - FxTemporaire
+  - Border
+  - obstacle
   layers:
   - Default
   - TransparentFX

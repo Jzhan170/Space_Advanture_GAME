@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class Player_Movement : MonoBehaviour
 {
@@ -17,11 +18,17 @@ public class Player_Movement : MonoBehaviour
 
     public VectorValues startingPosition;
 
-    
+    AudioSource audioS;
+    public AudioClip bump;
+
 
     void Start()
     {
         transform.position = startingPosition.initialValue;
+
+        audioS = GetComponent<AudioSource>();
+
+        audioS.clip = bump;
     }
 
     void Update()
@@ -36,6 +43,16 @@ public class Player_Movement : MonoBehaviour
         //}
         //touchPos = cam.ScreenToWorldPoint(touch.position);
     }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("obstacle") || other.gameObject.CompareTag("Border"))
+        {
+            audioS.Play();
+        }
+    }
+
+    
 
     void FixedUpdate()
     {
