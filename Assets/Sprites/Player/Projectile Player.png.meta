@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: 63b1eeef67b91994299c0c2945913a0a
+guid: 3fa1448b968a96145929919749c3c733
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2186220841108836911
-    second: Sci Fi Player L-Idle_0
+      213: -5888596664918044572
+    second: Projectile Player_0
   - first:
-      213: 2102679648403036992
-    second: Sci Fi Player L-Idle_1
+      213: -6337632174673445574
+    second: Projectile Player_1
   - first:
-      213: 1198544148102553576
-    second: Sci Fi Player L-Idle_2
+      213: 7376748111708265325
+    second: Projectile Player_2
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -143,13 +143,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sci Fi Player L-Idle_0
+      name: Projectile Player_0
       rect:
         serializedVersion: 2
-        x: 74
-        y: 59
-        width: 440
-        height: 396
+        x: 43
+        y: 9
+        width: 60
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,20 +157,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d771a78f15be63449dfb15ba7c13dcd
-      internalID: 2186220841108836911
+      spriteID: 74034df07e23ef14ca02ffdc68f8b8fa
+      internalID: -5888596664918044572
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sci Fi Player L-Idle_1
+      name: Projectile Player_1
       rect:
         serializedVersion: 2
-        x: 894
-        y: 54
-        width: 443
-        height: 396
+        x: 166
+        y: 8
+        width: 67
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b356d7c05522e747987a99259b4d106
-      internalID: 2102679648403036992
+      spriteID: b9e8b2ffa23631849adb276b8304b4af
+      internalID: -6337632174673445574
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sci Fi Player L-Idle_2
+      name: Projectile Player_2
       rect:
         serializedVersion: 2
-        x: 1473
-        y: 67
-        width: 440
-        height: 396
+        x: 312
+        y: 9
+        width: 69
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,8 +199,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23287a7688808814b8e5c0b76f09fae2
-      internalID: 1198544148102553576
+      spriteID: 87abc355c5f9bb54eba2954d1ba96b03
+      internalID: 7376748111708265325
       vertices: []
       indices: 
       edges: []
