@@ -29,6 +29,7 @@ public class EnemyPatrol : MonoBehaviour
             if(waitTime <= 0)
             {
                 randomSpot = Random.Range(0, moveSpots.Length);
+                Flip();
                 waitTime = startWaitTime;
             }
             else
@@ -36,5 +37,14 @@ public class EnemyPatrol : MonoBehaviour
                 waitTime -= Time.deltaTime;
             }
         }
+    }
+    /// <summary>
+    /// Allows for sprite to flip its direction to seem as though it turns 
+    /// </summary>
+    void Flip()
+    {
+        Vector3 theScale = transform.localScale;
+        theScale.x *= -1;
+        transform.localScale = theScale;
     }
 }

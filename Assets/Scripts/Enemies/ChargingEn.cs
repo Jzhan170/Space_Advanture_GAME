@@ -21,6 +21,16 @@ public class ChargingEn : MonoBehaviour
         if (Vector2.Distance(transform.position, target.position) < Chaseing_Stop_Distance)
         {
             transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+            Flip();
         }
+    }
+    /// <summary>
+    /// Allows for sprite to flip its direction to seem as though it turns 
+    /// </summary>
+    void Flip()
+    {
+        Vector3 theScale = transform.localScale;
+        theScale.x *= -1;
+        transform.localScale = theScale;
     }
 }

@@ -33508,12 +33508,12 @@ PrefabInstance:
     - target: {fileID: 4461205873574544522, guid: 895e4aeaed03fc5499b030883dbaf416,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -27.88
+      value: -34.1
       objectReference: {fileID: 0}
     - target: {fileID: 4461205873574544522, guid: 895e4aeaed03fc5499b030883dbaf416,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.9
+      value: 7.39
       objectReference: {fileID: 0}
     - target: {fileID: 4461205873574544522, guid: 895e4aeaed03fc5499b030883dbaf416,
         type: 3}
@@ -33564,11 +33564,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Charging Enemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 7067250893879465665, guid: 895e4aeaed03fc5499b030883dbaf416,
-        type: 3}
-      propertyPath: moveSpots.Array.size
-      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7067250893879465665, guid: 895e4aeaed03fc5499b030883dbaf416,
         type: 3}
