@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 7251816590829650062}
   - component: {fileID: 4349486556592758953}
   - component: {fileID: 8564760021646942136}
-  - component: {fileID: 7067250893879465665}
   - component: {fileID: 7740096051606215891}
   - component: {fileID: 2461199076599327229}
+  - component: {fileID: 3249253168442187963}
   m_Layer: 0
   m_Name: Charging Enemy
   m_TagString: ChargeEnemy
@@ -145,27 +145,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  Chaseing_Stop_Distance: 3
---- !u!114 &7067250893879465665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5449321323111132388}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06db538122f15bc458316b06d7004a01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 3
-  moveSpots:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  startWaitTime: 3
+  Chaseing_Stop_Distance: 5
+  retreatDistance: 3
 --- !u!114 &7740096051606215891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,11 +166,36 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5449321323111132388}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 06db538122f15bc458316b06d7004a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
-  moveSpots: []
+  speed: 2
+  moveSpots:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   startWaitTime: 3
+--- !u!50 &3249253168442187963
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5449321323111132388}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
