@@ -12,12 +12,11 @@ GameObject:
   - component: {fileID: 990107958235960731}
   - component: {fileID: 990107958235960730}
   - component: {fileID: 132907423}
-  - component: {fileID: 183957312596336071}
-  - component: {fileID: 713867214}
   - component: {fileID: 3352540174634666883}
-  - component: {fileID: 2012799556}
-  - component: {fileID: 1846556480}
-  - component: {fileID: 5094535568988473949}
+  - component: {fileID: 764725266}
+  - component: {fileID: 764725267}
+  - component: {fileID: 238455792}
+  - component: {fileID: 3906516836219863795}
   m_Layer: 0
   m_Name: Slithering Enemy
   m_TagString: FiringEnemy
@@ -120,32 +119,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 319d95cdfef899e489741ae32ef3ab86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &183957312596336071
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 990107958235960732}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6b3fca3c3525294cb81fde59084c0ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 4
-  Chaseing_Stop_Distance: 3
---- !u!114 &713867214
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 990107958235960732}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 319d95cdfef899e489741ae32ef3ab86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!58 &3352540174634666883
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -162,7 +135,7 @@ CircleCollider2D:
   m_Offset: {x: -0.020895004, y: -0.0835495}
   serializedVersion: 2
   m_Radius: 0.825407
---- !u!114 &2012799556
+--- !u!114 &764725266
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -171,10 +144,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 990107958235960732}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 319d95cdfef899e489741ae32ef3ab86, type: 3}
+  m_Script: {fileID: 11500000, guid: 06db538122f15bc458316b06d7004a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1846556480
+  speed: 3
+  moveSpots:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  startWaitTime: 3
+--- !u!114 &764725267
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -183,10 +162,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 990107958235960732}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 319d95cdfef899e489741ae32ef3ab86, type: 3}
+  m_Script: {fileID: 11500000, guid: 7549001fd6d7cf44a91a90688d5a7fae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5094535568988473949
+  bullet: {fileID: 2334445067538265126, guid: 0f26df6a27e03f241a2f4715f5f32ab8, type: 3}
+--- !u!114 &238455792
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -195,9 +175,33 @@ MonoBehaviour:
   m_GameObject: {fileID: 990107958235960732}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06db538122f15bc458316b06d7004a01, type: 3}
+  m_Script: {fileID: 11500000, guid: 9eabb0034bd3d9343b0fb00ca07d5fb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
-  moveSpots: []
-  startWaitTime: 3
+  speed: 4
+  retreatDistance: 6
+  StarttimeBtwShots: 2
+  projectile: {fileID: 2334445067538265126, guid: 0f26df6a27e03f241a2f4715f5f32ab8,
+    type: 3}
+  player: {fileID: 0}
+--- !u!50 &3906516836219863795
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990107958235960732}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2334445067538265147}
   - component: {fileID: 2334445067538265144}
   - component: {fileID: 2334445067538265145}
+  - component: {fileID: 1711269019775877580}
   m_Layer: 0
   m_Name: Enemy Projectile
   m_TagString: EnemyProjectile
@@ -118,3 +119,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1711269019775877580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2334445067538265126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e12d8b1647f5246a425d96698cccf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5

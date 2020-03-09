@@ -9,6 +9,8 @@ public class ChargingEn : MonoBehaviour
     private Transform target;
 
     public float Chaseing_Stop_Distance;
+    //public float StopDistance;
+    public float retreatDistance;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,10 +20,16 @@ public class ChargingEn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Vector2.Distance(transform.position, target.position) < Chaseing_Stop_Distance)
+        if (Vector2.Distance(transform.position, target.position) > Chaseing_Stop_Distance)
         {
             transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
-            Flip();
+            //Flip();
+        } else if(Vector2.Distance(transform.position, target.position) < Chaseing_Stop_Distance && Vector2.Distance(transform.position, target.position) > retreatDistance)
+        {
+            transform.position = this.transform.position;
+        }else if (Vector2.Distance(transform.position, target.position) < retreatDistance)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, target.position, -speed * Time.deltaTime);
         }
     }
     /// <summary>
