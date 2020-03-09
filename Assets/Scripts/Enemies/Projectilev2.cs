@@ -30,6 +30,7 @@ public class Projectilev2 : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            Juicescore.juicescore += 1;
             scorescript.scoreValue += 1;
             DestroyProjectile();
         }
