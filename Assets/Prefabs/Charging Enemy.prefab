@@ -146,6 +146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   Chaseing_Stop_Distance: 5
+  ChaseDistance: 10
   retreatDistance: 3
 --- !u!114 &7740096051606215891
 MonoBehaviour:
@@ -196,6 +197,6 @@ Rigidbody2D:
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4

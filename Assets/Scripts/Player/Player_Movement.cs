@@ -53,7 +53,44 @@ public class Player_Movement : MonoBehaviour
         }
     }
 
-    
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        
+        if (other.CompareTag("Plant"))
+        {
+            Debug.Log("Picked");
+            
+            plantscore.Plantscore += 1;
+            
+
+        }
+        if (other.CompareTag("Alien"))
+        {
+            Debug.Log("Picked");
+
+            Alienscore.alienscore += 1;
+
+
+        }
+        if (other.CompareTag("Skull"))
+        {
+            Debug.Log("Picked");
+
+            Skullscore.skullscore += 1;
+
+
+        }
+        if (other.CompareTag("Rock"))
+        {
+            Debug.Log("Picked");
+
+            Rockscore.rockscore += 1;
+
+
+        }
+    }
+
+
 
     void FixedUpdate()
     {

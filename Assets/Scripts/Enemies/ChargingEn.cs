@@ -5,15 +5,16 @@ using UnityEngine;
 public class ChargingEn : MonoBehaviour
 {
     public float speed ;
-
+    private Rigidbody2D rb;
     private Transform target;
 
     public float Chaseing_Stop_Distance;
-    //public float StopDistance;
+    //public float ChaseDistance;
     public float retreatDistance;
     // Start is called before the first frame update
     void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 
@@ -22,14 +23,17 @@ public class ChargingEn : MonoBehaviour
     {
         if (Vector2.Distance(transform.position, target.position) > Chaseing_Stop_Distance)
         {
-            transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+            //transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+            Vector3 temp = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+            rb.MovePosition(temp);
             //Flip();
         } else if(Vector2.Distance(transform.position, target.position) < Chaseing_Stop_Distance && Vector2.Distance(transform.position, target.position) > retreatDistance)
         {
             transform.position = this.transform.position;
         }else if (Vector2.Distance(transform.position, target.position) < retreatDistance)
         {
-            transform.position = Vector2.MoveTowards(transform.position, target.position, -speed * Time.deltaTime);
+            Vector3 temp = Vector2.MoveTowards(transform.position, target.position, -speed * Time.deltaTime);
+            rb.MovePosition(temp);
         }
     }
     /// <summary>

@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class scorescript : MonoBehaviour
+public class Skullscore : MonoBehaviour
 {
-
-    public static int scoreValue = 0;
-    Text score; 
+    public static int skullscore = 0;
+    Text score;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,10 +16,6 @@ public class scorescript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        score.text = "SAMPLE COLLECTED:"+scoreValue;
-        //if(scoreValue == 6)
-        //{
-            //score.text = "RETURN TO SPACESHIP"; 
-        //}
+        score.text = "" + skullscore;
     }
 }
