@@ -24,4 +24,5 @@ public class StartManager : MonoBehaviour
         SceneManager.LoadScene("Title Scene");
     }
 
+    
 }
