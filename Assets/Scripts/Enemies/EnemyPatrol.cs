@@ -39,7 +39,7 @@ public class EnemyPatrol : MonoBehaviour
         }
     }
     /// <summary>
-    /// Allows for sprite to flip its direction to seem as though it turns 
+    /// d Allows for sprite to flip its direction to seem as though it turns 
     /// </summary>
     void Flip()
     {
